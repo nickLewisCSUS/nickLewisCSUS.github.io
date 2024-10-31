@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancify Shamcify</title>
+    <script src="fancifymytext.js"></script>
 </head>
 <body>
     <h1>Fancify my Text</h1>
 
-    <!-- Your UI controls and other content go here -->
+     <!-- Text field wrapped in a fieldset with a label -->
+     <fieldset style="border: 1px solid; padding: 10px;">
+      <legend>Text</legend>
+      <textarea rows="4" cols="30" placeholder="Enter your text here..."></textarea>
+    </fieldset>
+    
+    <!-- Second fieldset for Fancify controls -->
+    <fieldset style="border: 1px solid; padding: 10px; margin-top: 10px;">
+      <legend>Fancify</legend>
+      
+      <!-- Button labeled Bigger! -->
+      <button onclick="makeTextBigger()">Bigger!</button>
+      
+      <!-- Radio buttons for FancyShmancy and BoringBetty -->
+      <div style="margin-top: 10px;">
+          <input type="radio" id="fancy" name="style" value="FancyShmancy">
+          <label for="fancy">FancyShmancy</label><br>
+          
+          <input type="radio" id="boring" name="style" value="BoringBetty">
+          <label for="boring">BoringBetty</label>
+      </div>
+    </fieldset>
+
+    <script>
+      // Placeholder for the button functionality
+      function makeTextBigger() {
+          alert("Bigger button clicked!");
+      }
+    </script>
+
 </body>
 </html>
